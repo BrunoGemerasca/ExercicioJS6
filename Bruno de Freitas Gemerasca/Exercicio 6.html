@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        
+        <script>
+            
+            var nome;
+            var sexo;
+            var idade;
+            
+                nome = prompt('Digite o nome da pessoa:', '');
+		idade = prompt('Digite a idade da pessoa', 'ex. 26').replace(',', '.');
+                sexo = prompt('Digite o sexo da pessoa', 'ex. M ou F').replace('M', 'm').replace('F', 'f');
+            
+            
+            document.write('<strong>Nome: </strong>' + nome + ', <strong>Idade:</strong> ' + idade + ', <Strong>Sexo:</Strong>:' + sexo);
+            
+		if (sexo== 'm' &&  idade >= 30) {
+			faixa = 'Homem com mais de 30 anos';
+		
+		}else if (sexo== 'm' &&  idade >= 20) {
+			faixa = 'Homem entre 20 e 30 anos';
+                    
+                }else if (sexo== 'm' &&  idade > 40) {
+			faixa = 'Homem com mais de 40 anos';
+                        
+                }else if (sexo== 'f' &&  idade > 50) {
+			faixa = 'Mulher com mais de 50 anos';
+                
+                }else if (sexo== 'f' &&  idade < 20) {
+			faixa = 'mulher com menos de 20 anos';  
+            
+                }else if (sexo== 'f' &&  idade < 25) {
+			faixa = 'mulher com menos de 25 anos';
+                        
+                }else if (sexo== 'f' &&  idade > 35) {
+			faixa = 'mulher com mais de 35 anos';         
+                        
+    }
+            
+            
+            
+		document.write('<br/><br/><strong>Faixa etária: </strong>' + faixa);
+            
+        </script>
+        
+        
+        
+        
+    </body>
+</html>
